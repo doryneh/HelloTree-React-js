@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+export { default as Signup } from "./components/SignUp";
+export { default as Signin } from "./components/Signin";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

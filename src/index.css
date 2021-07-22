@@ -1,13 +1,257 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a {
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.back {
+  height: 100vh;
+  background-color: rgb(15, 78, 67);
+}
+
+.back .green {
+  height: 100vh;
+  background-image: url(Img.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.back .green .logo {
+  position: absolute;
+  left: 95px;
+  top: 48px;
+}
+
+.logo img {
+  width: 80.58px;
+}
+
+.back .green .text {
+  position: absolute;
+  left: 95px;
+  top: 250px;
+}
+
+.back .green .text .textTop img {
+  width: 80%;
+}
+
+.back .green .text .textBottom img {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.back .green .white {
+  width: 560px;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 1px solid #1f6a5d;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+}
+.back .green .longWhite{
+  height: auto;
+  width: 560px;
+  padding-bottom: 20px !important;
+}
+
+.back .green .white .exit {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EFF0F0;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.back .green .white .exit img {
+  width: 10px;
+}
+
+.back .green .white .SignButtons input {
+  display: none;
+  background-color: #1f6a5d !important;
+}
+
+.back .green .white .SignButtons label {
+  border: 1px solid #1f6a5d;
+}
+
+.back .green .white .SignButtons .btn-secondary.active{
+  background-color: #1f6a5d !important;
+  color: white;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.back .green .white .SignButtons .btn-secondary:hover {
+  z-index: 0;
+}
+
+.back .green .white .SignButtons .btn-secondary.active:hover {
+  z-index: 1;
+}
+
+.back .green .white .SignButtons .btn-secondary{
+  background-color: white !important;
+  color: #1f6a5d;
+  font-weight: normal;
+  width: 100px;
+  height: 45px;
+  border: 1px solid #1F6A5D80;
+  padding-top: 10px;
+  box-shadow: none !important;
+}
+
+.back .green .white .SignButtons .btn-secondary.firstBtn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+
+.back .green .white .SignButtons .btn-secondary.secondBtn{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  margin: 0 -0.5em;
+}
+
+.back .green .white .input-group input {
+  border: 1px solid rgba(31, 106, 93, 0.202);
+  padding-left: 30px;
+
+  border-radius: 15px !important;
+  background-color: #EFF0F0;
+  box-shadow:none;
+}
+
+input[type="email"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,input[type="number"]::-webkit-input-placeholder,input[type="text"]::-webkit-input-placeholder {
+  color: #1f6a5db3;
+  font-size: 15px;    
+}
+
+.back .green .white .input-group .ShowPass{
+  position: absolute;
+  right: 5%;
+  top: 25%;
+
+}
+.back .green .white .input-group .ShowPass svg{
+  border-radius:15px !important;
+  color: #1f6a5d80;
+}
+.back .green .white .Forgot{
+  line-height: 27px;
+  font-size: 15px;
+}
+.back .green .white .Forgot a{
+  text-decoration: underline;
+  color: #ACACAC;
+
+}
+.back .green .white .inBtn button.btn-primary{
+  background-color: #ED6257;
+  box-shadow: none;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 13px;
+  font-weight: bold;
+  border-radius: 15px;
+  width:460px ;
+  height: 50px;
+  border: none;
+}
+.back .green .white .inBtn button.btn-primary span{
+  float: right;
+  padding-right:15px ;
+}
+.back .green .white .AnotherWays h6{
+  color: #1F6A5D;
+  font-weight:lighter;
+
+}
+.back .green .white .AnotherWays .facebook .btn-primary{
+  background-color: #3C5A9A;
+  box-shadow: none;
+  font-weight: normal;
+}
+.back .green .white .AnotherWays .facebook .btn-primary span{
+  float: left;
+  font-size: 120%;
+}
+.back .green .white .AnotherWays .google .btn-primary{
+  background-color: #34A853;
+  box-shadow: none;
+  font-weight: normal;
+}
+/*
+*****************************************
+****Sign Up page ************************
+*****************************************
+*/
+.back .green .white .UserType h6{
+  color: #071915;
+  font-size: 13px;
+}
+.back .green .white .UserType .form-check .form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid #DFE3E3;
+  box-shadow: none !important;
+  display: inline-block;
+}
+.form-check-input:checked[type=radio] {
+  background-image: url(Bg.png) !important;
+  
+}
+
+.back .green .white .UserType .form-check  .form-check-label{
+  color: #071915;
+}
+.back .green .white .UserType .form-check  .form-check-label span{
+  font-size: 12px;
+  color: #75918C;
+
+}
+.back .green .white  #companyName input{
+  width: 100%;
+
+}
+#companyName{
+  display: none;
+}
+
+.back .green .white .UserType .form-check  .form-check-label span svg{
+  color:#1F6A5D;
+  font-size: 15px;
+}
+.back .info img{
+  position: absolute;
+  top: 200px;
+  right: 100px; 
+  width: 419px;
+  
+}
+
+.back .green .white .UserType .form-check  .form-check-label span.PublicDetails:hover .shown{
+  display: block !important;
+  z-index: 3;
+}
+.back .green .white  input.TermAndPolice{
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  border-color: #75918C;
+  background-color: white;
+}
+.back .green .white  input.TermAndPolice:checked{
+  background-color: #1F6A5D;
+}
+.back .green .white  .ReadAndAccept{
+  color: #1F6A5D;
 }
